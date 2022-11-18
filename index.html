@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="estilos.css">
-    <title>Geonnathan Desarrollador De SoftWare</title>
+    <title>Geonnathan Desarrollador</title>
 </head>
 
 <body>
@@ -22,8 +22,8 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#conocimientos" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">MIS PROYECTOS</a></li>
+                            <li><a href="#conocimientos" onclick="seleccionar(this)">conocimientos</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
@@ -55,7 +55,7 @@
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, Soy <span>Geonnathan Acuña</span> </h2>
-            <h3>Desarrollador de SoftWare</h3>
+            <h3>Desarrollador</h3>
             <p>Soy estudiante en la universidad de Costa Rica, en la carrera informática empresarial. En el ámbito personal y profesional me catalogo como una persona puntual, con capacidad de aprender rápido, trabajar bajo presión, honestidad, responsabilidad y sobre todo la ética profesional que conlleva el ejercicio de mi profesión.</p>
             <a href="https://drive.google.com/file/d/1LptNoOdEaiCgsWe9QlqkWqo0L8EBj9eL/view?usp=sharing">Descargar CV</a>
         </div>
@@ -197,16 +197,16 @@
         <section id="contacto">
             <h3 class="titulo-seccion">Contactanos ahora</h3>
             <div class="contenedor-form">
-                <form action="">
+                <form action="https://formsubmit.co/geonnathan1494ge@hotmail.com" method="POST">
                     <div class="fila mitad">
-                        <input type="text" placeholder="Nombre Completo *" class="input-mitad">
-                        <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                        <input type="text" name="name" placeholder="Nombre Completo *" class="input-mitad" required="true">
+                        <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required="true">
                     </div>
                     <div class="fila">
-                        <input type="text" placeholder="Tema..." class="input-full">
+                        <input type="text" name="subject" placeholder="Asunto..." class="input-full" required="true">
                     </div>
                     <div class="fila">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                        <textarea name="comments" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
                     </div>
 
                     <input type="submit" value="Enviar Mensaje" class="btn-enviar">
